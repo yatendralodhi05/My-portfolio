@@ -148,6 +148,7 @@ main {
 
         width: 50%;
         min-height: 70vh;
+        margin-top: 80px;
         
 }
 
@@ -323,6 +324,7 @@ main {
         min-height: 70vh;
         display: flex;
         justify-content: center;
+        margin-top: 80px;
         
     }
 
