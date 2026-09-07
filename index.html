@@ -10,7 +10,11 @@
     <link rel="stylesheet" href="style.css">
 
 </head>
+
     <body>
+
+        <div class="cursor"></div>
+    <div class="cursor-dot"></div>
     
         <main>
             <div id="page1">
@@ -344,6 +348,50 @@
                 </div>
             </div>
         </main>
+
+        <script>
+
+const cursor = document.querySelector(".cursor");
+const cursorDot = document.querySelector(".cursor-dot");
+
+
+// Mouse movement
+document.addEventListener("mousemove", function(e) {
+
+    cursor.style.left = e.clientX + "px";
+    cursor.style.top = e.clientY + "px";
+
+    cursorDot.style.left = e.clientX + "px";
+    cursorDot.style.top = e.clientY + "px";
+
+});
+
+
+// Cursor animation on links and buttons
+const clickable = document.querySelectorAll("a, button");
+
+clickable.forEach(function(item) {
+
+    item.addEventListener("mouseenter", function() {
+
+        cursor.style.width = "55px";
+        cursor.style.height = "55px";
+        cursor.style.borderColor = "#22d3ee";
+
+    });
+
+
+    item.addEventListener("mouseleave", function() {
+
+        cursor.style.width = "35px";
+        cursor.style.height = "35px";
+        cursor.style.borderColor = "#a78bfa";
+
+    });
+
+});
+
+</script>
         
     </body>
 </html>
@@ -386,7 +434,11 @@ function typeEffect() {
 typeEffect();
 
 
+
+
 </script>
+
+
 
 <style>
 #role {
