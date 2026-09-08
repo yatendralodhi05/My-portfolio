@@ -831,9 +831,8 @@ main {
     font-weight: 400;
     color: white;
     text-align: center;
+   margin-top: 50px;
    
-    left: 50%;
-    top: 90%
 }
 
 #p1:hover .project-menu ,#p2:hover .project-menu ,#p3:hover .project-menu {
