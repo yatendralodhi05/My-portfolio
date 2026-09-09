@@ -978,19 +978,19 @@ box-shadow:
 #page7{
     display: flex;              
    align-items: center;
+   
     flex-direction: column;
     min-height:700px;
 }
 
-.certificate{
-    width:80%;
+.certificate {
+    width: 80%;
     min-height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
-    
     margin-top: 50px;
-    gap:10%;
+    gap: 10%;
 }
 
 #cb1{
@@ -1350,17 +1350,22 @@ box-shadow:
     margin-top:20px;
 }
 
+#certificate{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
 
 
 }
 
+#page7 .blue{
+    margin-left: 42%;
+}
 
-   
-   
+#page7.yellow{
+    right: 20%;
 
+}
 
-
-
-
-
- 
+}
